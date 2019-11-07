@@ -11,10 +11,10 @@ end
  attendees
 end
 
-def assign_rooms(array_of_names)
+def assign_rooms(speakers)
   welcome_messages = []
   counter = 1
-  array_of_names.each_with_index do |name|
+  speakers.each_with_index do |name|
     welcome_messages << "Hello, #{name}! You'll be assigned to room #{counter}!"
     counter += 1
   end
