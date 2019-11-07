@@ -12,13 +12,13 @@ end
 end
 
 def assign_rooms(speakers)
-  welcome_messages = []
+  rooms = []
   counter = 1
   speakers.each_with_index do |name|
-    welcome_messages << "Hello, #{name}! You'll be assigned to room #{counter}!"
+    rooms << "Hello, #{name}! You'll be assigned to room #{counter}!"
     counter += 1
   end
-  welcome_messages
+  rooms
 end 
 
 def printer(attendees)
