@@ -12,10 +12,10 @@ end
 end
 
 def assign_rooms(speakers)
-  rooms = []
+  welcome_messages = []
   counter = 1
   speakers.each_with_index do |name|
-    rooms << "Hello, #{name}! You'll be assigned to room #{counter}!"
+    welcome_messages << "Hello, #{name}! You'll be assigned to room #{counter}!"
     counter += 1
   end
   welcome_messages
